@@ -1,3 +1,3 @@
-import tkMessageBox
+import ctypes
 
-tkMessageBox.showerror('error title', 'error message')
+ctypes.windll.user32.MessageBoxW(0, u"It worked", u"Lol, it worked", 0)
